@@ -1,0 +1,1 @@
+from quantools.crypto.binance import HistoricalData
