@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     name = 'quantools',  # How you named your package folder (foo)
@@ -12,6 +12,7 @@ setup(
     download_url = 'https://github.com/pentcn/quantools/archive/master.zip',
     keywords = ['quant', 'tools'],  # Keywords that define your package best
     install_requires=['loguru','pandas'],
+    packages=find_packages(),
     classifiers = [
         'Development Status::3-Alpha', # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
         'Intended Audience::Developers', # Define that your audience are developers
